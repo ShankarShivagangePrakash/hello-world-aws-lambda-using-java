@@ -1,2 +1,4 @@
 .idea
 .aws-sam
+target/
+dependency-reduced-pom.xml
