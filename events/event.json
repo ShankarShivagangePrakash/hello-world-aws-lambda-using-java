@@ -1,23 +1,4 @@
 {
-  "gill": [
-    {
-      "Science": 85,
-      "Social": 82,
-      "Maths": 87
-    }
-  ],
-  "Bob": [
-    {
-      "Science": 82,
-      "Social": 62,
-      "Maths": 45
-    }
-  ],
-  "Vinay": [
-    {
-      "Science": 86,
-      "Social": 37,
-      "Maths": 74
-    }
-  ]
+  "name": "Abhay",
+  "patientId": "1245"
 }

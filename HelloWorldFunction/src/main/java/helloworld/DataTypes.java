@@ -1,5 +1,8 @@
 package helloworld;
 
+import helloworld.pojo.ClinicalRecord;
+import helloworld.pojo.Patient;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -36,5 +39,15 @@ public class DataTypes {
     public Map<String, List<Map<String, Integer>>> AddStudentScores(Map<String, List<Map<String, Integer>>> studentScores) {
         System.out.println(studentScores);
         return studentScores;
+    }
+
+    public ClinicalRecord getPatientClinicalRecord(Patient patient) {
+        System.out.println(patient.getPatientId());
+        System.out.println(patient.getName());
+
+        ClinicalRecord clinicalRecord = new ClinicalRecord();
+        clinicalRecord.setBp("80/120");
+        clinicalRecord.setHeartRate("82");
+        return clinicalRecord;
     }
 }
