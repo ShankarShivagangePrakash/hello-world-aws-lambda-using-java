@@ -55,14 +55,16 @@ public class DataTypes {
         return clinicalRecord;
     }
 
-    public void getOutPut(InputStream inputStream, OutputStream outputStream, Context context) throws IOException {
+    public void getOutPut(InputStream inputStream, OutputStream outputStream, Context context) throws IOException, InterruptedException {
 
+        Thread.sleep(4000);
         System.out.println(context.getAwsRequestId());
         System.out.println(context.getFunctionName());
         System.out.println(context.getLogger());
         System.out.println(context.getLogGroupName());
         System.out.println(context.getMemoryLimitInMB());
         System.out.println(context.getRemainingTimeInMillis());
+        System.out.printf("Time remaining for execution %d in seconds\n", context.getRemainingTimeInMillis()/1000);
         int data;
         while ((data = inputStream.read()) != -1) {
             outputStream.write(Character.toLowerCase(data));
