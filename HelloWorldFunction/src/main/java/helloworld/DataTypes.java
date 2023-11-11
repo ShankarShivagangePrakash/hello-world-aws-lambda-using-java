@@ -3,6 +3,9 @@ package helloworld;
 import helloworld.pojo.ClinicalRecord;
 import helloworld.pojo.Patient;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -49,5 +52,12 @@ public class DataTypes {
         clinicalRecord.setBp("80/120");
         clinicalRecord.setHeartRate("82");
         return clinicalRecord;
+    }
+
+    public void getOutPut(InputStream inputStream, OutputStream outputStream) throws IOException {
+        int data;
+        while ((data = inputStream.read()) != -1) {
+            outputStream.write(Character.toLowerCase(data));
+        }
     }
 }
