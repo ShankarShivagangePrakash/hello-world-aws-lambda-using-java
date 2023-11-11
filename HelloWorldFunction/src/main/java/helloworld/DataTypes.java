@@ -14,6 +14,23 @@ import java.util.Map;
 
 public class DataTypes {
 
+    private Double instanceVariable = Math.random();
+    private static Double staticVariable = Math.random();
+
+    public DataTypes() {
+        System.out.println("Inside constructor");
+    }
+
+    static {
+        System.out.println("inside static block");
+    }
+
+    public void coldStartBasics() {
+        Double localVariable = Math.random();
+        System.out.println("Instance Variable: " +instanceVariable +
+                " static variable: " + staticVariable +
+                " local variable: " + localVariable);
+    }
     public int getNumber(float number) {
         return (int)number;
     }
