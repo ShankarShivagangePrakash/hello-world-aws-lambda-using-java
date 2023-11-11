@@ -32,4 +32,9 @@ public class DataTypes {
     public void printMapData(Map<String, Integer> studentScores) {
         System.out.println(studentScores);
     }
+
+    public Map<String, List<Map<String, Integer>>> AddStudentScores(Map<String, List<Map<String, Integer>>> studentScores) {
+        System.out.println(studentScores);
+        return studentScores;
+    }
 }
