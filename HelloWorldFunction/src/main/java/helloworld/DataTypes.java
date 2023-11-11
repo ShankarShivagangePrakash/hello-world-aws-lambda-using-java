@@ -28,4 +28,8 @@ public class DataTypes {
 
         return matchingScores;
     }
+
+    public void printMapData(Map<String, Integer> studentScores) {
+        System.out.println(studentScores);
+    }
 }
