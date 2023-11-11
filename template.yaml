@@ -16,6 +16,9 @@ Resources:
       - x86_64
       MemorySize: 512
       Timeout: 6
+      Environment:
+        Variables:
+          restApiUrl: testUrl
 
   ApplicationResourceGroup:
     Type: AWS::ResourceGroups::Group

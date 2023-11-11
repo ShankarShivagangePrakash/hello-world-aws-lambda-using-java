@@ -57,7 +57,9 @@ public class DataTypes {
 
     public void getOutPut(InputStream inputStream, OutputStream outputStream, Context context) throws IOException, InterruptedException {
 
-        Thread.sleep(4000);
+//        Thread.sleep(4000);
+
+        System.out.printf("Environment variable value of restApiURL %s", System.getenv("restApiUrl"));
         System.out.println(context.getAwsRequestId());
         System.out.println(context.getFunctionName());
         System.out.println(context.getLogger());
